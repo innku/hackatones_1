@@ -1,0 +1,281 @@
+//Google font for the template
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+// Hackatones variables
+$main-color: #ffffff;
+$title-color: #393c3e;
+$text-color: #a7a9ac;
+$almost-white: #f2f2f2;
+$light-grey: #d7d8d8;
+$almost-black: #050505;
+$red: #d0021b;
+
+body {
+  padding-top: 50px;
+}
+
+p {
+  color: $text-color;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.starter-template {
+  padding: 70px 15px;
+  text-align: center;
+}
+
+// navbar
+.navbar {
+  background: $main-color!important;
+  border-bottom: 3px solid $red;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin-bottom: -10px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggle .icon-bar{
+  background: $red;
+}
+
+#main-menu a {
+  bottom: 3px;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.125em;
+  padding: 2.5em 15px;
+}
+
+#main-menu .nav > li > a:hover {
+  background-color: darken($main-color, 25%);
+  color: $almost-white;
+}
+
+//header
+.image-bg-fluid-height {
+  background: url('../img/background.jpg') no-repeat center center scroll;
+  background-size: cover;
+  padding: 20.75em 0 16.25em 0;
+  height: 100vh;
+
+  h1 {
+    color: $almost-white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    line-height: 1.75em;
+  }
+}
+
+//white-block
+.white-block {
+  margin: 5.313em 0;
+
+  h2 {
+    border-bottom: solid 1px $red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    margin-bottom: 0.938em;
+    padding-bottom: 1.250em;
+    text-align: center;
+  }
+
+  h4 {
+    color: $main-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+  }
+
+  li {
+    list-style: none;
+  }
+
+}
+
+.white-block-bis {
+  margin: 5.313em 0 0 0;
+
+  h2 {
+    border-bottom: solid 1px $red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    margin-bottom: 0.938em;
+    padding-bottom: 1.250em;
+    text-align: center;
+  }
+
+  h4 {
+    /*color: $main-color;*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.grey-background {
+  background-color: $text-color;
+}
+
+.grey-block {
+  margin: 5.313em 0 0 0;
+
+  h2 {
+    border-bottom: solid 1px $light-grey;
+    color: $main-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    margin-bottom: 0.938em;
+    padding-bottom: 1.250em;
+    text-align: center;
+  }
+
+  h3 {
+    color: $main-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    padding-bottom: 1.250em;
+    text-align: center;
+  }
+
+  p {
+    color: $almost-white;
+  }
+
+  li {
+    list-style: none;
+  }
+
+}
+
+//premios
+.main-color-background {
+  background-color: $red;
+}
+
+.main-color-block {
+  margin: 5.313em 0;
+  border-bottom: 3px solid $red;
+
+  h2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  .map {
+    width: 100%;
+    height: 31.250em;
+  }
+
+}
+
+.award{
+  margin: 0;
+  padding: 0;
+
+  figure{
+    display: block;
+    margin: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  figcaption{
+    background: rgba(255,255,255,0.8);
+    bottom: 0;
+    padding: 3rem;
+    position: absolute;
+    width: 100%;
+
+    h4{
+      color: $almost-black;
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    p{
+      color: $almost-black;
+    }
+  }
+}
+
+.black-background {
+  background-color: $main-color;
+}
+
+.footer-block {
+  margin: 5.313em 0;
+
+  .footer-list {
+    margin-left: 0;
+
+    li {
+      color: $almost-black;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.313em;
+      list-style: none;
+      margin-bottom: 0.938em;
+
+      a {
+        color: $almost-black;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      color: $almost-black;
+      font-size: 1em;
+      margin-left: 0.938em;
+    }
+    a {
+      color: $almost-black;
+      text-decoration: underline;
+    }
+  }
+
+  .footer-icons {
+    display: inline;
+    float: left;
+
+    li {
+      float: left;
+      list-style: none;
+      padding-right: 1em;
+    }
+
+    img {
+      width: 1.875em;
+    }
+  }
+}
+
+.extra-margin {
+  margin-bottom: 3.750em;
+}
+.extra-padding {
+  padding-bottom: 15px;
+}
+

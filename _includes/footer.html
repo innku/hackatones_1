@@ -1,0 +1,31 @@
+<div class="black-background">
+  <div class="container">
+    <div class="row footer-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="footer-list">
+              <li><a href="#about">Contacto</a></li>
+              <!-- Para el contacto te recomendamos vincular un cuestionario de google forms -->
+              <li>Nombre del organizador</li>
+              <p>Pellen tesque sit amet arcu quis neque faucibus luctus et nec eros. <a href="">Página organizador</a></p>
+            </ul>
+
+          </div>
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <ul class="footer-icons">
+              {% for social in site.data.social %}
+                <li><a href="{{ social.twitter }}" target="_blank"><img src="img/icon-twitter.svg" /></a></li>
+                <li><a href="{{ social.facebook }}" target="_blank"><img src="img/icon-facebook.svg" /></a></li>
+                <li><a href="{{ social.instagram }}" target="_blank"><img src="img/icon-instagram.svg" /></a></li>
+                <li><a href="{{ social.linkedin }}" target="_blank"><img src="img/icon-linkedin.svg" /></a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

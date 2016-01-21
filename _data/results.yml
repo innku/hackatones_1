@@ -1,0 +1,7 @@
+- name: Resultados
+  column_1: |
+    <p>Texto a reemplazar. Este espacio está pensado para incluir una descripción de los logros del evento, datos reelevantes o cualquier informacion relacionada.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>
+
+  column_2: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>

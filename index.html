@@ -1,0 +1,143 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row white-block">
+    <div class="col-lg-10 col-lg-offset-1">
+      {% for goal in site.data.goal %}
+      <h2>{{ goal.name }}</h2>
+      <p>{{ goal.description}}</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="grey-background">
+  <div class="container">
+    <div class="row grey-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>Agenda</h2>
+        <div class="row">
+          <ul>
+            {% for agenda in site.data.agenda %}
+            <li>
+              <div class="col-md-6 extra-margin">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>{{ agenda.name }}</h3>
+                  </div>
+                  <div class="col-md-8">
+                    <p>{{ agenda.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-color-background">
+  <div class="container">
+    <div class="row main-color-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        {% for map in site.data.map %}
+        <h2>{{ map.name }}</h2>
+        {{ map.description}}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row white-block-bis">
+    <div class="col-lg-10 col-lg-offset-1">
+      <h2>Jueces</h2>
+      <div class="row">
+        <ul>
+          {% for judge in site.data.judges %}
+          <li>
+            <div class="col-md-6 extra-margin">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img class="img-circle extra-padding" src="{{ judge.image }}" />
+                </div>
+                <div class="col-xs-8">
+                  <h4>{{ judge.name }}</h4>
+                  <p>{{ judge.description }}</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grey-background">
+  <div class="container">
+    <div class="row grey-block">
+      <div class="col-lg-10 col-lg-offset-1 extra-margin">
+        {% for results in site.data.results %}
+        <h2>{{ results.name }}</h2>
+        <div class="col-md-6">
+          {{ results.column_1 }}
+        </div>
+        <div class="col-md-6">
+          {{ results.column_2 }}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-color-background">
+  {% for winners in site.data.winners %}
+  <div class="container-fluid">
+    <div class="row main-color-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>{{ winners.title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 award">
+        <figure>
+          <img src="img/winners/winner_1.jpg" alt="Award">
+          <figcaption>{{ winners.winner_one }}</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 award">
+        <figure>
+          <img src="img/winners/winner_2.jpg" alt="Award">
+          <figcaption>{{ winners.winner_two }}</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 award">
+        <figure>
+          <img src="img/winners/winner_3.jpg" alt="Award">
+          <figcaption>{{ winners.winner_three }}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Esta sección debe ser reemplazada en la etapa Posterior
+<div class="main-color-background">
+  <div class="container">
+    <div class="row main-color-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>Ganadores</h2>
+      </div>
+    </div>
+  </div>
+</div>
+-->
