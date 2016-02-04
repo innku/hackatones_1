@@ -1,0 +1,16 @@
+name: Ganadores
+winners:
+  - name: Nombre del ganador
+    description: |
+      Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
+    image: img/winners/winner_1.jpg
+
+  - name: Nombre del ganador
+    description: |
+      Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
+    image: img/winners/winner_2.jpg
+
+  - name: Nombre del ganador
+    description: |
+      Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
+    image: img/winners/winner_3.jpg

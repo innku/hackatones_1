@@ -10,20 +10,11 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">Noticias</a></li>
-        <li><a href="#faqs">Preguntas frecuentes</a></li>
+        <li class="scroll"><a class="{% if page.url == '/' %}active{% endif%}" href="{{site.baseurl}}/">Home</a></li>
+        <li class="scroll"><a class="{% if page.url == '/blog/' %}active{% endif%}" href="{{site.baseurl}}/blog/">Noticias</a></li>
+        <li class="scroll"><a class="{% if page.url == '/faqs/' %}active{% endif%}" href="{{site.baseurl}}/faqs/">Preguntas frecuentes</a></li>
+        <li class="scroll"><a class="{% if page.url == '/rules/' %}active{% endif%}" href="{{site.baseurl}}/rules/">Reglas del evento</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>
-<header class="image-bg-fluid-height">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
-        {% for header in site.data.header %}
-          <h1>{{ header.title }}</h1>
-        {% endfor %}
-      </div>
-    </div>
-</header>

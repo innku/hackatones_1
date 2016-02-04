@@ -1,0 +1,37 @@
+<script type="text/javascript">
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 400) {
+        $(".scroll").addClass("scroll_padding");
+    } else {
+        $(".scroll").removeClass("scroll_padding");
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  $('#arrowButton').click(function() {
+    $('html, body').animate({scrollTop: $('#titleWithArrow').offset().top}, 1000);
+  });
+</script>
+
+<script src="/js/wow.min.js"></script>
+
+<script>
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+  document.getElementById('moar').onclick = function() {
+    var section = document.createElement('section');
+    section.className = 'section--purple wow fadeInDown';
+    this.parentNode.insertBefore(section, this);
+  };
+</script>

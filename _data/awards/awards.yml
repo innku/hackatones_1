@@ -1,0 +1,19 @@
+name: Los Premios
+awards:
+  - name: 1er lugar
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+
+  - name: 2do lugar
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+
+  - name: 3er lugar
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.

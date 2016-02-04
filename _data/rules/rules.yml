@@ -1,0 +1,10 @@
+name: Reglas del evento
+rules:
+  - title: 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    text:  In sapien quam, feugiat ac pretium eget, sagittis non turpis. Sed non purus eu nunc pellentesque viverra nec ac eros. In eget sollicitudin nunc. Praesent interdum porta tellus, in viverra ex ullamcorper at. Nunc ut gravida nisl.
+
+  - title: 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    text:  In sapien quam, feugiat ac pretium eget, sagittis non turpis. Sed non purus eu nunc pellentesque viverra nec ac eros. In eget sollicitudin nunc. Praesent interdum porta tellus, in viverra ex ullamcorper at. Nunc ut gravida nisl.
+
+  - title: 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    text:  In sapien quam, feugiat ac pretium eget, sagittis non turpis. Sed non purus eu nunc pellentesque viverra nec ac eros. In eget sollicitudin nunc. Praesent interdum porta tellus, in viverra ex ullamcorper at. Nunc ut gravida nisl.

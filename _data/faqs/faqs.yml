@@ -1,0 +1,10 @@
+name: Preguntas frecuentes
+questions:
+  - question: ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    answer:  In sapien quam, feugiat ac pretium eget, sagittis non turpis. Sed non purus eu nunc pellentesque viverra nec ac eros. In eget sollicitudin nunc. Praesent interdum porta tellus, in viverra ex ullamcorper at. Nunc ut gravida nisl.
+
+  - question: ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    answer: Etiam tinci dunt risus risus, eget vehicula purus iaculis non. Integer a rhoncus mi. Fusce imperdiet mattis fermentum.
+
+  - question: ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    answer: In dolor arcu, faucibus eu mauris a, auctor placerat odio. Maecenas aliquam porttitor enim, at mollis massa pulvinar at. Aliquam sit amet leo efficitur, elementum lacus et, gravida purus.

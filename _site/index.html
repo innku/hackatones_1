@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Título para el hackaton</title>
+  <title>Hackaton | Hackaton</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
@@ -14,7 +14,7 @@
   <link rel="canonical" href="http://yourdomain.com/">
   <link rel="alternate" type="application/rss+xml" title="Título para el hackaton" href="http://yourdomain.com/feed.xml">
 
-  <!-- jQuery & Bootstrap JS -->
+  <!-- jQuery, Bootstrap JS and animate -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
@@ -35,104 +35,105 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">Noticias</a></li>
-        <li><a href="#faqs">Preguntas frecuentes</a></li>
+        <li class="scroll"><a class="" href="/">Home</a></li>
+        <li class="scroll"><a class="" href="/blog/">Noticias</a></li>
+        <li class="scroll"><a class="" href="/faqs/">Preguntas frecuentes</a></li>
+        <li class="scroll"><a class="" href="/rules/">Reglas del evento</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>
+
+
+      <!-- Imagen superior -->
 <header class="image-bg-fluid-height">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
-        
-          <h1>Pellentesque sit amet arcu quis neque faucibus luctus et nec eros.</h1>
-        
+      <div class="col-lg-10 col-lg-offset-1 animated fadeIn wow">
+        <h1>Título para el hackaton</h1>
       </div>
     </div>
+  </div>
+  <button id="arrowButton" type="button" placeholder=""/>
+    <img src="img/arrow.png">
+  </button>
 </header>
 
-
-      <div class="container">
+<!-- Objetivo del hackaton -->
+<section id="titleWithArrow" class="container animated fadeIn wow">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
       
-      <h2>Objetivo</h2>
-      <p>Texto a reemplazar Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>
+      <h2 class="animated fadeIn wow">Objetivo</h2>
+      <p class="extra-margin-sides">Texto a reemplazar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>
       
     </div>
   </div>
-</div>
+</section>
 
-<div class="grey-background">
-  <div class="container">
+<!-- Agenda -->
+<section class="grey-background animated fadeIn wow">
+  <div class="container" data-wow-delay="1s">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1">
+        
+        
         <h2>Agenda</h2>
-        <div class="row">
-          <ul>
-            
-            <li>
-              <div class="col-md-6 extra-margin">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3>1er día</h3>
-                  </div>
-                  <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
-                  </div>
-                </div>
+        <ul class="row">
+          
+          <li class="col-md-6 col-sm-6 extra-margin">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h3>1er día</h3>
               </div>
-            </li>
-            
-            <li>
-              <div class="col-md-6 extra-margin">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3>2do día</h3>
-                  </div>
-                  <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
-                  </div>
-                </div>
+              <div class="col-md-8 col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
               </div>
-            </li>
-            
-            <li>
-              <div class="col-md-6 extra-margin">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3>3er día</h3>
-                  </div>
-                  <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
-                  </div>
-                </div>
+            </div>
+          </li>
+          
+          <li class="col-md-6 col-sm-6 extra-margin">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h3>2do día</h3>
               </div>
-            </li>
-            
-            <li>
-              <div class="col-md-6 extra-margin">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3>4to día</h3>
-                  </div>
-                  <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
-                  </div>
-                </div>
+              <div class="col-md-8 col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
               </div>
-            </li>
-            
-          </ul>
-        </div>
+            </div>
+          </li>
+          
+          <li class="col-md-6 col-sm-6 extra-margin">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h3>3er día</h3>
+              </div>
+              <div class="col-md-8 col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
+              </div>
+            </div>
+          </li>
+          
+          <li class="col-md-6 col-sm-6 extra-margin">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h3>4to día</h3>
+              </div>
+              <div class="col-md-8 col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.</p>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+        
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="main-color-background">
+<!-- Mapa -->
+<section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
@@ -143,162 +144,219 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="container">
+<!-- Jueces -->
+<section class="container animated fadeIn wow">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
+      
+      
       <h2>Jueces</h2>
-      <div class="row">
-        <ul>
-          
-          <li>
-            <div class="col-md-6 extra-margin">
-              <div class="row">
-                <div class="col-xs-4">
-                  <img class="img-circle extra-padding" src="img/jueces/juez.png" />
-                </div>
-                <div class="col-xs-8">
-                  <h4>1er juez</h4>
-                  <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit.
+      <ul class="row">
+        
+        <li class="col-md-6 col-sm-6 extra-margin">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <img class="img-circle" src="img/jueces/juez.png" />
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <h4>1er juez</h4>
+              <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit.
 Lorem ipsum dolor sit amet, consectetur adi piscing elit.
 </p>
-                </div>
-              </div>
             </div>
-          </li>
-          
-          <li>
-            <div class="col-md-6 extra-margin">
-              <div class="row">
-                <div class="col-xs-4">
-                  <img class="img-circle extra-padding" src="img/jueces/juez.png" />
-                </div>
-                <div class="col-xs-8">
-                  <h4>2do juez</h4>
-                  <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit.
+          </div>
+        </li>
+        
+        <li class="col-md-6 col-sm-6 extra-margin">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <img class="img-circle" src="img/jueces/juez.png" />
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <h4>2do juez</h4>
+              <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit.
 Lorem ipsum dolor sit amet, consectetur adi piscing elit.
 </p>
-                </div>
-              </div>
             </div>
-          </li>
-          
-          <li>
-            <div class="col-md-6 extra-margin">
-              <div class="row">
-                <div class="col-xs-4">
-                  <img class="img-circle extra-padding" src="img/jueces/juez.png" />
-                </div>
-                <div class="col-xs-8">
-                  <h4>3er juez</h4>
-                  <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit.
+          </div>
+        </li>
+        
+        <li class="col-md-6 col-sm-6 extra-margin">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <img class="img-circle" src="img/jueces/juez.png" />
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <h4>3er juez</h4>
+              <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit.
 Lorem ipsum dolor sit amet, consectetur adi piscing elit.
 </p>
-                </div>
-              </div>
             </div>
-          </li>
-          
-          <li>
-            <div class="col-md-6 extra-margin">
-              <div class="row">
-                <div class="col-xs-4">
-                  <img class="img-circle extra-padding" src="img/jueces/juez.png" />
-                </div>
-                <div class="col-xs-8">
-                  <h4>4to juez</h4>
-                  <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+          </div>
+        </li>
+        
+        <li class="col-md-6 col-sm-6 extra-margin">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <img class="img-circle" src="img/jueces/juez.png" />
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <h4>4to juez</h4>
+              <p>Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
 Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
 </p>
-                </div>
-              </div>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Premios -->
+<section class="main-color-background animated fadeIn wow">
+  <div class="container">
+    <div class="row main-color-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        
+        
+        <h2 class="border-title">Los Premios</h2>
+        <ul class="row">
+          
+          <li>
+            <div class="col-md-2 col-sm-4">
+              <h3>1er lugar</h3>
+            </div>
+            <div class="col-md-10 col-sm-8 extra-margin">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="col-md-2 col-sm-4">
+              <h3>2do lugar</h3>
+            </div>
+            <div class="col-md-10 col-sm-8 extra-margin">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="col-md-2 col-sm-4">
+              <h3>3er lugar</h3>
+            </div>
+            <div class="col-md-10 col-sm-8 extra-margin">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+</p>
             </div>
           </li>
           
         </ul>
+        
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="grey-background">
+<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
+
+<section class="grey-background animated fadeIn wow">
   <div class="container">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1 extra-margin">
         
         <h2>Resultados</h2>
-        <div class="col-md-6">
-          <p>Texto a reemplazar. Este espacio está pensado para incluir una descripción de los logros del evento, datos reelevantes o cualquier informacion relacionada.</p>
+        <p class="extra-margin-sides">Texto a reemplazar. Este espacio está pensado para incluir una descripción de los logros del evento, datos reelevantes o cualquier informacion relacionada.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>
+<p class="extra-margin-sides">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>
 
-        </div>
-        <div class="col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna at ligula scelerisque ullamcorper. Aliquam bibendum augue in tortor lobortis, at blandit libero sodales. Sed efficitur enim id mollis ullamcorper. Ut eleifend diam vitae luctus ultricies. Vivamus bibendum, augue sed porttitor sollicitudin, augue ligula iaculis leo, quis auctor libero mauris aliquet nulla. Vivamus commodo neque eget arcu rutrum, id tincidunt augue eleifend. Integer pulvinar felis non luctus blandit. Etiam ut dui id mauris molestie rhoncus eu ac lectus. Maecenas id varius augue, in eleifend mi. Integer dictum vestibulum libero, ut fringilla nunc faucibus sit amet.</p>
-        </div>
         
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="main-color-background">
-  
+<section class="winners-background animated fadeIn wow">
   <div class="container-fluid">
     <div class="row main-color-block">
+      
+      
       <div class="col-lg-10 col-lg-offset-1">
         <h2>Ganadores</h2>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 award">
-        <figure>
-          <img src="img/winners/winner_1.jpg" alt="Award">
-          <figcaption><h4>Nombre del ganador</h4> <p>Pellentesque sit amet arcu quis neque faucibus luctus et nec eros.<p></figcaption>
-        </figure>
-      </div>
-      <div class="col-md-4 award">
-        <figure>
-          <img src="img/winners/winner_2.jpg" alt="Award">
-          <figcaption><h4>Nombre del ganador</h4> <p>Pellentesque sit amet arcu quis neque faucibus luctus et nec eros.<p></figcaption>
-        </figure>
-      </div>
-      <div class="col-md-4 award">
-        <figure>
-          <img src="img/winners/winner_3.jpg" alt="Award">
-          <figcaption><h4>Nombre del ganador</h4> <p>Pellentesque sit amet arcu quis neque faucibus luctus et nec eros.<p></figcaption>
-        </figure>
+      <ul  class="no-margin">
+        
+        <li>
+          <div class="col-md-4 col-sm-4 award">
+            <figure>
+              <img src="img/winners/winner_1.jpg" alt="Award">
+              <figcaption>
+                <h4>Nombre del ganador</h4>
+                <p>Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
+</p>
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        
+        <li>
+          <div class="col-md-4 col-sm-4 award">
+            <figure>
+              <img src="img/winners/winner_2.jpg" alt="Award">
+              <figcaption>
+                <h4>Nombre del ganador</h4>
+                <p>Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
+</p>
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        
+        <li>
+          <div class="col-md-4 col-sm-4 award">
+            <figure>
+              <img src="img/winners/winner_3.jpg" alt="Award">
+              <figcaption>
+                <h4>Nombre del ganador</h4>
+                <p>Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
+</p>
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        
+      </ul>
+      
       </div>
     </div>
   </div>
-  
-</div>
-
-<!-- Esta sección debe ser reemplazada en la etapa Posterior
-<div class="main-color-background">
-  <div class="container">
-    <div class="row main-color-block">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Ganadores</h2>
-      </div>
-    </div>
-  </div>
-</div>
--->
+</section>
 
 
-    <div class="black-background">
+    <div class="black-background animated fadeIn wow">
   <div class="container">
     <div class="row footer-block">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-md-10 col-md-offset-1">
+        
         <div class="row">
           <div class="col-md-4">
             <ul class="footer-list">
-              <li><a href="#about">Contacto</a></li>
+              <li><a href="https://apps.google.com/intx/es-419_mx/products/forms/">Contacto</a></li>
               <!-- Para el contacto te recomendamos vincular un cuestionario de google forms -->
-              <li>Nombre del organizador</li>
-              <p>Pellen tesque sit amet arcu quis neque faucibus luctus et nec eros. <a href="">Página organizador</a></p>
+              <li>El Nombre del organizador</li>
+              <p>Pellen tesque sit amet arcu quis neque faucibus luctus et nec eros. <a href="https://">Página organizador</a></p>
             </ul>
 
           </div>
@@ -306,19 +364,57 @@ Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit 
           </div>
           <div class="col-md-4">
             <ul class="footer-icons">
-              
-                <li><a href="https://twitter.com" target="_blank"><img src="img/icon-twitter.svg" /></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><img src="img/icon-facebook.svg" /></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><img src="img/icon-instagram.svg" /></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank"><img src="img/icon-linkedin.svg" /></a></li>
-              
+              <li><a href="https://twitter.com"><img src="/img/icon-twitter.svg" /></a></li>
+              <li><a href="https://www.facebook.com"><img src="/img/icon-facebook.svg" /></a></li>
+              <li><a href="https://www.instagram.com"><img src="/img/icon-instagram.svg" /></a></li>
+              <li><a href="https://www.linkedin.com"><img src="/img/icon-linkedin.svg" /></a></li>
             </ul>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
 </div>
+
+
+    <script type="text/javascript">
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 400) {
+        $(".scroll").addClass("scroll_padding");
+    } else {
+        $(".scroll").removeClass("scroll_padding");
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  $('#arrowButton').click(function() {
+    $('html, body').animate({scrollTop: $('#titleWithArrow').offset().top}, 1000);
+  });
+</script>
+
+<script src="/js/wow.min.js"></script>
+
+<script>
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+  document.getElementById('moar').onclick = function() {
+    var section = document.createElement('section');
+    section.className = 'section--purple wow fadeInDown';
+    this.parentNode.insertBefore(section, this);
+  };
+</script>
 
 
   </body>

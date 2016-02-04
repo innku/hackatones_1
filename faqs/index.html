@@ -1,0 +1,25 @@
+---
+layout: default
+title: Preguntas frecuentes | Hackaton
+description: Las respuestas a las dudas más frecuentes sobre el hackatón.
+id: Rules
+---
+
+<div class="container">
+  <div class="row white-block extra-margin-header">
+    <div class="col-lg-10 col-lg-offset-1">
+      {% for faq_hash in site.data.faqs %}
+      {% assign faq = faq_hash[1] %}
+      <h2>{{ faq.name }}</h2>
+      <ul class="row">
+        {% for q in faq.questions %}
+        <li class="col-lg-12 extra-margin animated fadeIn wow">
+          <h3>{{ q.question }}</h3>
+          <p>{{ q.answer }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>
