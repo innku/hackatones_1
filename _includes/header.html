@@ -12,8 +12,8 @@
       <ul class="nav navbar-nav">
         <li class="scroll"><a class="{% if page.url == '/' %}active{% endif%}" href="{{site.baseurl}}/">Home</a></li>
         <li class="scroll"><a class="{% if page.url == '/blog/' %}active{% endif%}" href="{{site.baseurl}}/blog/">Noticias</a></li>
-        <li class="scroll"><a class="{% if page.url == '/faqs/' %}active{% endif%}" href="{{site.baseurl}}/faqs/">Preguntas frecuentes</a></li>
-        <li class="scroll"><a class="{% if page.url == '/rules/' %}active{% endif%}" href="{{site.baseurl}}/rules/">Reglas del evento</a></li>
+        {% if site.preguntas %}<li class="scroll"><a class="{% if page.url == '/faqs/' %}active{% endif%}" href="{{site.baseurl}}/faqs/">Preguntas frecuentes</a></li>{% endif %}
+        {% if site.reglas %}<li class="scroll"><a class="{% if page.url == '/rules/' %}active{% endif%}" href="{{site.baseurl}}/rules/">Reglas del evento</a></li>{% endif %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>

@@ -2,29 +2,30 @@
   <div class="container">
     <div class="row footer-block">
       <div class="col-md-10 col-md-offset-1">
-        {% for footer in site.data.footer %}
         <div class="row">
           <div class="col-md-4">
+            {% for contact in site.data.footer-contact %}
             <ul class="footer-list">
-              <li><a href="{{ footer.contact-link }}">{{ footer.contact-title }}</a></li>
+              <li><a href="{{ footer.contact-link }}">{{ contact.contact-title }}</a></li>
               <!-- Para el contacto te recomendamos vincular un cuestionario de google forms -->
-              <li>{{ footer.organizer-name }}</li>
-              <p>{{ footer.organizer-text }} <a href="{{ footer.organizer-link }}">{{ footer.organizer-text-title }}</a></p>
+              <li>{{ contact.organizer-name }}</li>
+              <p>{{ contact.organizer-text }} <a href="{{ contact.organizer-link }}">{{ contact.organizer-text-title }}</a></p>
             </ul>
-
+            {% endfor %}
           </div>
           <div class="col-md-4">
           </div>
           <div class="col-md-4">
+            {% for social_hash in site.data.social %}
+            {% assign social = social_hash[1] %}
             <ul class="footer-icons">
-              <li><a href="{{ footer.twitter }}"><img src="/img/icon-twitter.svg" /></a></li>
-              <li><a href="{{ footer.facebook }}"><img src="/img/icon-facebook.svg" /></a></li>
-              <li><a href="{{ footer.instagram }}"><img src="/img/icon-instagram.svg" /></a></li>
-              <li><a href="{{ footer.linkedin }}"><img src="/img/icon-linkedin.svg" /></a></li>
+              {% for s in social.social %}
+              <li><a href="{{ s.address }}"><img src="{{ s.image }}" /></a></li>
+              {% endfor %}
             </ul>
+            {% endfor %}
           </div>
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>

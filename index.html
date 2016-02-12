@@ -32,6 +32,7 @@ id: Home
 </section>
 
 <!-- Agenda -->
+{%if site.agenda %}
 <section class="grey-background animated fadeIn wow">
   <div class="container" data-wow-delay="1s">
     <div class="row grey-block">
@@ -58,20 +59,21 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- Mapa -->
-<section class="main-color-background animated fadeIn wow">
-  <div class="container">
-    <div class="row main-color-block">
-      <div class="col-lg-10 col-lg-offset-1">
-        {% for map in site.data.map %}
-        <h2>{{ map.name }}</h2>
-        {{ map.description}}
-        {% endfor %}
-      </div>
+{% if site.mapa %}
+<section class="container animated fadeIn wow">
+  <div class="row white-block-bis">
+    <div class="col-lg-10 col-lg-offset-1">
+      {% for map in site.data.map %}
+      <h2 class="no-border">{{ map.name }}</h2>
+      {{ map.description}}
+      {% endfor %}
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- Jueces -->
 <section class="container animated fadeIn wow">
@@ -101,37 +103,36 @@ id: Home
 </section>
 
 <!-- Premios -->
-<section class="main-color-background animated fadeIn wow">
-  <div class="container">
-    <div class="row main-color-block">
-      <div class="col-lg-10 col-lg-offset-1">
-        {% for award_hash in site.data.awards %}
-        {% assign award = award_hash[1] %}
-        <h2 class="border-title">{{ award.name }}</h2>
-        <ul class="row">
-          {% for a in award.awards %}
-          <li>
-            <div class="col-md-2 col-sm-4">
-              <h3>{{ a.name }}</h3>
-            </div>
-            <div class="col-md-10 col-sm-8 extra-margin">
-              <p>{{ a.description }}</p>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
+{% if site.premios %}
+<section class="container animated fadeIn wow">
+  <div class="row white-block-bis">
+    <div class="col-lg-10 col-lg-offset-1">
+      {% for award_hash in site.data.awards %}
+      {% assign award = award_hash[1] %}
+      <h2 >{{ award.name }}</h2>
+      <ul class="row">
+        {% for a in award.awards %}
+        <li>
+          <div class="col-md-2 col-sm-4">
+            <h3>{{ a.name }}</h3>
+          </div>
+          <div class="col-md-10 col-sm-8 extra-margin">
+            <p>{{ a.description }}</p>
+          </div>
+        </li>
         {% endfor %}
-      </div>
+      </ul>
+      {% endfor %}
     </div>
   </div>
 </section>
+{% endif %}
 
-<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
-
+{% if.site.resultados %}
 <section class="grey-background animated fadeIn wow">
   <div class="container">
     <div class="row grey-block">
-      <div class="col-lg-10 col-lg-offset-1 extra-margin">
+      <div class="col-lg-10 col-lg-offset-1 extra-margin-text">
         {% for results in site.data.results %}
         <h2>{{ results.name }}</h2>
         {{ results.description}}
@@ -140,8 +141,10 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
 
-<section class="winners-background animated fadeIn wow">
+{% if site.ganadores %}
+<section class="main-color-background animated fadeIn wow">
   <div class="container-fluid">
     <div class="row main-color-block">
       {% for winner_hash in site.data.winners %}
@@ -169,3 +172,4 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}

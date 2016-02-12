@@ -3,8 +3,5 @@
   organizer-name: El Nombre del organizador
   organizer-text-title: Página organizador
   organizer-text: Pellen tesque sit amet arcu quis neque faucibus luctus et nec eros.
-  organizer-link: https://
-  twitter: https://twitter.com
-  facebook: https://www.facebook.com
-  instagram: https://www.instagram.com
-  linkedin: https://www.linkedin.com
+  # Para el contacto te recomendamos vincular un cuestionario de google forms
+  organizer-link: https://google.com

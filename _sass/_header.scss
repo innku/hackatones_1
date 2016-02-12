@@ -1,12 +1,11 @@
 .navbar {
-  background: $main-color!important;
-  border-bottom: 3px solid $red;
+  background: white!important;
 }
 
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
-  margin-bottom: -10px;
+  margin-bottom: -9px;
 
   @media screen and (max-width:992px) {
     margin-bottom: 10px;
@@ -18,11 +17,14 @@
 }
 
 .navbar-toggle .icon-bar{
-  background: $red;
+  background: $main-color;
 }
 
 #main-menu {
-  border-bottom: 3px solid $red;
+  border-bottom: 3px solid $main-color;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #main-menu a {
@@ -43,12 +45,12 @@
 }
 
 #main-menu .active {
-  background-color: darken($main-color, 10%);
-  color: $almost-white;
+  background-color: darken($light-grey, 10%);
+  color: $almost-black;
 }
 
 #main-menu a:hover {
-  background-color: darken($main-color, 25%);
+  background-color: darken($light-grey, 25%);
   color: $almost-white;
 }
 
@@ -71,6 +73,7 @@
   @media (max-width:767px) {
     padding: 40vh 0 0 0;
   }
+
   @media (min-width:768px) and (max-width: 1024px) {
     padding: 46vh 0 0 0;
   }

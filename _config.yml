@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Título para el hackaton
 email: your-email@hackaton.com
@@ -12,10 +5,24 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/hackatones" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/hackatones"
+url: "http://yourdomain.com"
+
+# Variables de contenido
+# Hay dos escenarios uno previo a la fecha de inicio y otro posterior al término del evento
+# En el previo las variables quedan como están
+# Para el posterior se debe invertir el valor de las variables
+preguntas: true
+reglas: true
+agenda: true
+mapa: true
+premios: true
+resultados: false
+ganadores: false
+
+# Google analytics
+google_analytics: true
+tracking_id: UA-000000-0
 
 # Build settings
 markdown: kramdown

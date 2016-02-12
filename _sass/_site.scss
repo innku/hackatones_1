@@ -2,23 +2,23 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 // Hackatones variables
-$main-color: #ffffff;
+$main-color: #d0021b;
 $title-color: #393c3e;
 $text-color: #a7a9ac;
 $almost-white: #f2f2f2;
 $light-grey: #d7d8d8;
 $almost-black: #050505;
-$red: #d0021b;
 
 html {
   font-size: 100%;
 }
+
 body {
   padding-top: 50px;
 }
 
 p {
-  color: darken($text-color, 30% );
+  color: darken($text-color, 30%);
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
@@ -30,7 +30,6 @@ p {
 
 .white-block {
   margin: 5.313em 0;
-
   @media portrait and (max-width:767px) {
     margin: 2.625em 0;
   }
@@ -40,7 +39,7 @@ p {
   }
 
   h2 {
-    border-bottom: solid 1px $red;
+    border-bottom: solid 1px $main-color;
     color: $almost-black;
     font-family: 'Oswald', sans-serif;
     font-size: 2.250em;
@@ -57,20 +56,28 @@ p {
     font-family: 'Oswald', sans-serif;
     font-size: 1.500em;
     font-weight: 300;
+
+    a, a:visited {
+      color: $almost-black;
+    }
+
+    a:hover {
+      color: $text-color;
+    }
   }
 
   h4 {
-    color: $main-color;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.25em;
   }
 
   a {
-    color: $main-color;
+    color: white;
   }
 
   a:hover, a:visited {
-    color: darken($main-color, 25%);
+    color: darken(white, 25%);
   }
 
   li {
@@ -83,10 +90,6 @@ p {
     border-bottom: 1px solid $light-grey;
     @media portrait and (max-width:767px) {
       margin-bottom: 1.875em;
-    }
-
-    a{
-      color: $almost-black;
     }
   }
 
@@ -114,7 +117,7 @@ p {
   }
 
   h2 {
-    border-bottom: solid 1px $red;
+    border-bottom: solid 1px $main-color;
     color: $almost-black;
     font-family: 'Oswald', sans-serif;
     font-size: 2.250em;
@@ -127,14 +130,49 @@ p {
     }
   }
 
+  .no-border {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    color: $text-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    padding-bottom: 1.250em;
+    text-align: center;
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0;
+    }
+  }
+
   h4 {
     color: $almost-black;
     font-family: 'Oswald', sans-serif;
     font-size: 1.25em;
   }
 
+  p {
+    color: darken($text-color, 30% );
+  }
+
+  ul {
+    margin-left: 0;
+    margin-bottom: 0!important;
+  }
+
   li {
     list-style: none;
+  }
+
+  .map {
+    height: 31.250em;
+    margin-bottom: 5.313em;
+    width: 100%;
+    @media portrait and (max-width:767px) {
+      margin-bottom: 2.625em;
+    }
   }
 }
 
@@ -150,7 +188,7 @@ p {
 
   h2 {
     border-bottom: solid 1px $light-grey;
-    color: $main-color;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 2.250em;
     font-weight: 300;
@@ -163,17 +201,15 @@ p {
   }
 
   h3 {
-    color: $main-color;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 2.250em;
     font-weight: 300;
     padding-bottom: 1.250em;
     text-align: center;
-    @media portrait and (max-width:767px) { padding-bottom: 0;}
-    @media(min-width:768px){}
-    @media(min-width:992px){}
-    @media(min-width:1200px){}
-
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0;
+    }
   }
 
   p {
@@ -197,7 +233,7 @@ p {
   }
 
   h2 {
-    color: $almost-black;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 2.250em;
     font-weight: 300;
@@ -206,23 +242,6 @@ p {
     text-align: center;
     @media portrait and (max-width:767px) {
       padding-bottom: 0.938em;
-    }
-  }
-
-  .border-title {
-    border-bottom: solid 1px $red;
-    margin-bottom: 0.938em;
-  }
-
-  h3 {
-    color: $text-color;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.250em;
-    font-weight: 300;
-    padding-bottom: 1.250em;
-    text-align: center;
-    @media portrait and (max-width:767px) {
-      padding-bottom: 0;
     }
   }
 
@@ -237,15 +256,6 @@ p {
 
   li {
     list-style: none;
-  }
-
-  .map {
-    height: 31.250em;
-    margin-bottom: 5.313em;
-    width: 100%;
-    @media portrait and (max-width:767px) {
-      margin-bottom: 2.625em;
-    }
   }
 }
 
@@ -282,27 +292,17 @@ p {
   }
 }
 
-.winners-background {
-  background-color: $red;
-
-  .main-color-block{
-
-    h2{
-      color: $main-color;
-    }
-  }
-
-}
-
-.black-background {
-  background-color: $main-color;
-  border-top: 3px solid $red;
-}
-
 .extra-margin {
   margin-bottom: 3.750em;
   @media (max-width: 767px) {
     margin-bottom: 1.875em;
+  }
+}
+
+.extra-margin-text {
+  margin-bottom: 5.313em;
+  @media (max-width: 767px) {
+    margin-bottom: 2.625em;
   }
 }
 

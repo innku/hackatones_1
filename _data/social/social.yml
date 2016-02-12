@@ -1,0 +1,17 @@
+name: Social media
+social:
+  - name: Twitter
+    address: https://twitter.com
+    image: /img/icon-twitter.svg
+
+  - name: Facebook
+    address: https://www.facebook.com
+    image: /img/icon-facebook.svg
+
+  - name: Instagram
+    address: https://www.instagram.com
+    image: /img/icon-instagram.svg
+
+  - name: Linkedin
+    address: https://www.linkedin.com
+    image: /img/icon-linkedin.svg
