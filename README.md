@@ -33,5 +33,7 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
 - La imágenes de los post debe estár en el directorio `/post-images`
 
+- Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `Variables de color para el tema`
+
 ## Licencia
 MIT. Copyright (c) [Nombre del proveedor ](http://sitiodelproveedor.com)

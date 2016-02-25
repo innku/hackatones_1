@@ -45,12 +45,12 @@
 }
 
 #main-menu .active {
-  background-color: darken($light-grey, 10%);
+  background-color: lighten($secondary-color, 10%);
   color: $almost-black;
 }
 
 #main-menu a:hover {
-  background-color: darken($light-grey, 25%);
+  background-color: darken($secondary-color, 10%);
   color: $almost-white;
 }
 
