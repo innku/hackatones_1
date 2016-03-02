@@ -24,6 +24,11 @@ ganadores: false
 google_analytics: true
 tracking_id: UA-000000-0
 
+# Facebook comments
+fbcomments: true
+app_id: 000000000000000
+api_version: v2.5
+
 # Build settings
 markdown: kramdown
 

@@ -20,7 +20,7 @@
             {% assign social = social_hash[1] %}
             <ul class="footer-icons">
               {% for s in social.social %}
-              <li><a href="{{ s.address }}"><img src="{{ s.image }}" /></a></li>
+              <li><a href="{{ s.address }}"><img src="{{ site.baseurl }}{{ s.image }}" /></a></li>
               {% endfor %}
             </ul>
             {% endfor %}
