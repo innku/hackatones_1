@@ -92,12 +92,10 @@
   background-image: none;
   border: 0px solid transparent;
   bottom: 20px !important;
-  left: 48% !important;
+  display: inline-block;
+  margin: 0 auto;
   position: absolute;
-
-  @media screen and (max-width: 992px) {
-    left: 44% !important;
-  }
+  width: 100%;
 
   &:hover{
     opacity: 0.7;
